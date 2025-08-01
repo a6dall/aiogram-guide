@@ -1,0 +1,17 @@
+/* Убираем отступы между секциями */
+.md-nav__list {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Выравниваем размер всех пунктов меню */
+.md-nav__title,
+.md-nav__link {
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+/* Подсветка активного элемента */
+.md-nav__link--active {
+  color: #c792ea !important;
+}

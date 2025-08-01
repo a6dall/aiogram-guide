@@ -1,9 +1,11 @@
-site_name: Гайд по Aiogram
+site_name: ''  # Убираем лишний заголовок
 site_url: https://a6dall.github.io/aiogram-guide/
 
 theme:
   name: material
   language: ru
+  logo: null
+  include_homepage_in_sidebar: true
   features:
     - navigation.sections
     - navigation.top
@@ -11,7 +13,7 @@ theme:
     - search.highlight
     - search.share
   palette:
-    - scheme: slate  # ← тёмная тема по умолчанию
+    - scheme: slate
       primary: deep purple
       accent: lime
       toggle:
@@ -26,6 +28,10 @@ theme:
   font:
     text: Roboto
     code: Fira Code
+  custom_dir: overrides
+
+extra_css:
+  - styles/extra.css  # ← наш CSS для правки меню
 
 markdown_extensions:
   - admonition
@@ -44,6 +50,5 @@ nav:
   - Главная: index.md
   - Установка: install.md
   - Хэндлеры: handlers.md
-  - FSM:
-      - Основы: fsm/index.md
-      - Состояния: fsm/states.md
+  - FSM - Основы: fsm/index.md
+  - FSM - Состояния: fsm/states.md
