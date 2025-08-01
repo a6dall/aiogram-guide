@@ -1,4 +1,4 @@
-site_name: ''  # Убираем лишний заголовок
+site_name: ''
 site_url: https://a6dall.github.io/aiogram-guide/
 
 theme:
@@ -28,10 +28,9 @@ theme:
   font:
     text: Roboto
     code: Fira Code
-  custom_dir: overrides
 
 extra_css:
-  - styles/extra.css  # ← наш CSS для правки меню
+  - styles/extra.css
 
 markdown_extensions:
   - admonition
