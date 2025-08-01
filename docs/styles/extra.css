@@ -1,17 +1,30 @@
-/* Убираем отступы между секциями */
-.md-nav__list {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Выравниваем размер всех пунктов меню */
-.md-nav__title,
+/* Унифицированный стиль пунктов меню */
 .md-nav__link {
-  font-size: 15px !important;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cfd2da;
 }
 
-/* Подсветка активного элемента */
+.md-nav__item--active > .md-nav__link,
 .md-nav__link--active {
   color: #c792ea !important;
+}
+
+/* Заголовки разделов (секции) */
+.md-nav__title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c792ea;
+  margin-top: 1rem;
+}
+
+/* Вложенные пункты */
+.md-nav__list > .md-nav__item > .md-nav__list {
+  margin-left: 1rem;
+  font-size: 13px;
+}
+
+/* Убираем верхний отступ у списка */
+.md-sidebar__scrollwrap {
+  padding-top: 0 !important;
 }

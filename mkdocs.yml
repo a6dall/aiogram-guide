@@ -49,5 +49,10 @@ nav:
   - Главная: index.md
   - Установка: install.md
   - Хэндлеры: handlers.md
-  - FSM - Основы: fsm/index.md
-  - FSM - Состояния: fsm/states.md
+  - FSM:
+      - Основы: fsm/index.md
+      - Состояния: fsm/states.md
+  - Расширения:
+      - Aiogram Dialog: extensions/dialog.md
+      - Middlewares: extensions/middleware.md
+
