@@ -17,15 +17,12 @@ theme:
     text: Roboto
     code: Fira Code
   features:
-    - navigation.expand
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - toc.integrate
-    - content.code.annotate
-    - content.code.copy
+    - navigation.sections         # ← ✅ включает навигацию слева
+    - navigation.top             # ← кнопка наверх
+    - content.code.copy          # ← кнопка копировать
     - search.highlight
     - search.share
+
 
 markdown_extensions:
   - admonition
@@ -44,3 +41,7 @@ nav:
   - Главная: index.md
   - Установка: install.md
   - Хэндлеры: handlers.md
+  - FSM:
+      - Основы: fsm/index.md
+      - Состояния: fsm/states.md
+
