@@ -1,28 +1,31 @@
 site_name: Гайд по Aiogram
 site_url: https://a6dall.github.io/aiogram-guide/
+
 theme:
   name: material
   language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - search.share
   palette:
+    - scheme: slate  # ← тёмная тема по умолчанию
+      primary: deep purple
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
     - scheme: default
-      primary: blue
-      accent: light blue
-    - scheme: slate
-      primary: blue
-      accent: light blue
+      primary: deep purple
+      accent: lime
       toggle:
         icon: material/weather-night
-        name: Переключить тему
+        name: Тёмная тема
   font:
     text: Roboto
     code: Fira Code
-  features:
-    - navigation.sections         # ← ✅ включает навигацию слева
-    - navigation.top             # ← кнопка наверх
-    - content.code.copy          # ← кнопка копировать
-    - search.highlight
-    - search.share
-
 
 markdown_extensions:
   - admonition
@@ -32,8 +35,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.details
-  - pymdownx.tabbed
   - pymdownx.emoji
+  - pymdownx.tabbed
   - pymdownx.snippets
   - pymdownx.keys
 
@@ -44,4 +47,3 @@ nav:
   - FSM:
       - Основы: fsm/index.md
       - Состояния: fsm/states.md
-
